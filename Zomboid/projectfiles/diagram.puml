@@ -1,0 +1,19 @@
+@startuml
+class CSVInventory {
+    +load_csv()
+    +list_elements_page()
+    +get_element_by_id()
+    +search_elements_by_name()
+    +count_element()
+    +state_percentage_all()
+    +state_percentage_by_name()
+}
+
+class CLI {
+    +main()
+    +paginate()
+    +parse_args()
+}
+
+CLI --> CSVInventory : uses
+@enduml
